@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping Center</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Global Styles */
+        html, body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Wrapper for content and footer */
+        .wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #2C3E50; /* Darker navy blue */
+            color: white;
+            padding: 10px 0;
+        }
+
+        .footer h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        /* Form Styling */
+        .footer .form-group input, .footer .form-group textarea {
+            background-color: #34495E; /* Softer dark color */
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            color: #ecf0f1; /* Light font color */
+            margin-bottom: 10px;
+        }
+
+        .footer .btn {
+            /* Bright red button */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            font-size: 1em;
+        }
+
+        .footer .btn:hover {/* Darken button on hover */
+            color: white;
+        }
+
+        /* Contact Icons Styling */
+        .footer .glyphicon, .footer .fa {
+            color: #E74C3C; /* Matching red icons */
+            font-size: 1.2em;
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 0.9em;
+            text-align: center;
+            border-top: 1px solid #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Your main content goes here -->
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <h3>Contact Us</h3>
+                <p class="text-center">
+                    <em>We'd love to hear from you!</em>
+                </p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Fan? Drop a note.</p>
+                        <p>
+                            <span class="glyphicon glyphicon-map-marker"></span> Pune, Maharashtra
+                        </p>
+                        <p>
+                            <span class="glyphicon glyphicon-phone"></span> Phone: +91-9980940067
+                        </p>
+                        <p>
+                            <span class="glyphicon glyphicon-envelope"></span> Email: shopmamazon01@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="col-md-8">
+                        <form action="fansMessage" method="post">
+                            <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+            <div class="col-sm-10 form-group">
+                <textarea class="form-control" id="comments" name="comments" placeholder="Your Message" rows="1" required></textarea>
+            </div>
+            <div class="col-sm-2 form-group">
+                <button class="btn btn-secondry" type="submit" style=" background-color:transparent; right:80px;">
+                    <i class="fa fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <p>
+                        <span class="glyphicon glyphicon-copyright-mark"></span> TechBazaar - 2024
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
